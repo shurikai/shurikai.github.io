@@ -30,7 +30,11 @@ theme = 'PaperMod'
         url = '/about/'
         weight = 2
     [[menu.main]]
+        name = 'now'
+        url = '/now/'
+        weight = 3
+    [[menu.main]]
         name = 'archive'
         url = '/archives/'
-        weight = 3
+        weight = 4
     
