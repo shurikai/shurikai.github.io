@@ -1,0 +1,36 @@
+baseURL = 'https://shurikai.github.io/'
+languageCode = 'en-us'
+title = 'Jason'
+theme = 'PaperMod'
+
+[pagination]
+    pagerSize = 10
+
+[params]
+    author = "Jason Chestnut"
+    description = "Developer & Tinkerer"
+    ShowReadingTime = true
+    ShowShareButtons = false
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    homeInfoParams = { Title = "Hi, I'm Jason", Content = "I write about code, projects, and whatever else I'm currently obsessed with." }
+
+    [[params.socialIcons]]
+        name = "github"
+        url = 'https://github.com/shurikai'
+
+[menu]
+    [[menu.main]]
+        name = 'blog'
+        url = '/posts/'
+        weight = 1
+    [[menu.main]]
+        name = 'about'
+        url = '/about/'
+        weight = 2
+    [[menu.main]]
+        name = 'archive'
+        url = '/archives/'
+        weight = 3
+    
