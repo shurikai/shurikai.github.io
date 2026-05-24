@@ -4,8 +4,6 @@ draft = false
 title = 'Right Now'
 +++
 
- # Now
-
 Hi, I’m Jason, a senior software engineer focused primarily on backend systems, APIs, distributed architecture, and pragmatic engineering leadership.
 
 This page is a snapshot of what I’m currently focused on professionally and personally.
