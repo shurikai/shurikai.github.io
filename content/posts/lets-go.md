@@ -12,7 +12,7 @@ styles, my natural inclination is to own one of each. In a lot of ways, it is ab
 aesthetic beauty. I've collected Magic: the Gathering cards with their beautiful art,
 old Disston handsaws with their stunning etches and hand carved apple handles, and a lot
 of other things of beauty in my life. The one collection that seems to be consistent, though, is
-programming languages. It started early on, in my freshman year of collge, and still
+programming languages. It started early on, in my freshman year of college, and still
 affects my day-to-day relationship with software development. It might be hard to see how
 that relates to the other stuff, but to me the patterns and shapes of the written code
 carry their own unique loveliness that is kind of unique in the world.
@@ -23,11 +23,11 @@ and variables. The usual beginning stuff. I enjoyed what I was learning so much
 that halfway through the first semester, I changed majors from Electrical
 Engineering to Computer Science, and never really looked back. From there I took
 data structures with C++, then later on a Programming Languages course. Now, at
-some schools this is a comparative survey of lanugages, discussing features of
+some schools this is a comparative survey of languages, discussing features of
 each and the tradeoffs between, but at Tulane, we learned this stuff by
 implementing them (static vs dynamic typing, strong vs weak typing, various
 paradigms, etc) in a language interpreter, the basis of which was provided by
-the professor. This early look under the hood of real language fetures set me up
+the professor. This early look under the hood of real language features set me up
 for a life long interest in various languages.
 
 By my senior year, Java 1.2 was released (December 1998), and I started looking into it
