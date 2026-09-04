@@ -10,7 +10,7 @@ _really_ asking for, then match that somehow against a scattered career history 
 parts of my unique background were actually relevant to that specific job. I wanted to be able to
 tell, concretely, which piece or pieces of my history supported a particular requirement, and how.
 
-Data storage and retrieval sounded a lot like a database, so I got started defining a schema.
+I needed a database to handle all that structured data, so I got started on a schema.
 Job contributions were tagged by skill, by domain, by employer, and by date. Job description
 requirements that were extracted and normalized into the same vocabulary were stored in a separate table.
 Then I wrote SQL joins to match one against the other, with an alias table to catch the inevitable cases
@@ -45,7 +45,7 @@ and embeddings are a genuinely good answer to it. However, the data I'm working 
 It's job contributions (referred to in Role Model as contribution atoms) with real fields. They can have skill
 tags, date ranges, employer, and category.
 
-Structuring the data that doesn't mean the semantic problem goes away, though. A JD asking for "3+ years of
+Structuring the data doesn't mean the semantic problem goes away, though. A JD asking for "3+ years of
 Kubernetes in production" and my own notes saying that I've "deployed services to K8s on AWS" are talking about
 the same thing, and that needs to be known by the system. The semantic matching still has to happen somewhere, 
 and I moved it. Instead of asking an embedding model to infer that equivalence at query time, I wrote it down
@@ -86,4 +86,4 @@ for a human to confirm, not replacing the deterministic SQL path that produces t
 
 Similarity retrieves candidates. Evidence establishes claims. Provenance establishes trust. The moment embeddings
 start deciding whether a piece of my career history satisfies a job requirement instead of just suggesting that it
-might, I lose the property that sent me down this rabbit hole in the first place.
+might, I lose the property that made this whole thing worth building to start with.
