@@ -64,6 +64,8 @@ at which employer I got that match. Every bullet generated carries with it the I
 it came from. A resume-generator that can't explain its own outputs isn't one that I would trust to describe
 me to a hiring manager.
 
+![A JD requirement for "3+ years Kubernetes" is normalized through a hand-written alias table matching "K8s" to "Kubernetes," joined in SQL against a contribution row, and the resulting match keeps the ID of that row attached.](rag_retrieval_provenance_flow.png)
+
 I didn't build it this way because I'd weighed vector search against structured retrieval and made a principled
 choice. I built it this way because I didn't know vector search was the "normal" approach, and I reached for SQL
 because that's the tool I've trusted for twenty-five years. It just so happens that the constraints of this
