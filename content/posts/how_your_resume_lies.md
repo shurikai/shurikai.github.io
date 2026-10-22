@@ -4,6 +4,7 @@ draft = false
 title = 'How Your Resume Lies While Telling the Truth'
 tags = ['ai', 'career']
 featured = true
+description = "LLMs rarely invent your experience. They inflate it one plausible word at a time, until \"contributed to\" quietly becomes \"led.\""
 +++
 
 The most dangerous thing that can happen with your resume when working with an LLM to optimize for job applications isn't an

@@ -4,6 +4,7 @@ draft = false
 title = 'Oops! All Ragtime!'
 tags = ['ai', 'career']
 featured = true
+description = "I built RAG in plain SQL before I knew the term existed. Why structured retrieval beat embeddings for my resume data, and where vectors still fit."
 +++
 
 I was trying to solve a problem, as you do. My effort to make an LLM-powered job and resume management

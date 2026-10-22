@@ -1,117 +1,83 @@
 +++
 date = '2026-05-20T18:31:20-04:00'
+lastmod = '2026-10-22T16:15:00-04:00'
 draft = false
 title = 'Right Now'
+description = "What I'm working on, building, and thinking about at the moment."
 +++
 
-Hi, I’m Jason, a senior software engineer focused primarily on backend systems, APIs, distributed architecture, and pragmatic engineering leadership.
+This is a snapshot of what I'm focused on these days, professionally and personally. It's a
+[now page](https://nownownow.com/about), so it changes as I do.
 
-This page is a snapshot of what I’m currently focused on professionally and personally.
-
-Inspired by the idea of a “now page” from [nownownow.com](https://nownownow.com/about?utm_source=chatgpt.com).
-
----
-
-## Current Focus
-
-Right now I’m spending a lot of time sharpening and modernizing parts of my engineering skill set while exploring new opportunities.
-
-A few areas I’m actively working on:
-
-* Go backend development
-* Event-driven architecture and distributed systems
-* AI/LLM integration patterns
-* Cloud architecture and AWS
-* Modern TypeScript and React
-* System design and technical leadership communication
-
-I’ve spent much of my career in Java and Spring Boot ecosystems, but I enjoy learning new languages and approaches when they solve problems more cleanly.
+*Last updated October 2026.*
 
 ---
 
-## Things I’m Building
+## Work
 
-### Personal health tracking platform
+I'm an independent software architect. These days I'm leading architecture for Kafka and Flink at a
+Fortune 50 healthcare company, which has me deeper in stream processing, Confluent Cloud, and Terraform
+than I've ever been. A lot of my time goes to the unglamorous parts: how you load-test a topic, how you
+notice consumer lag before it becomes an incident, and what a platform team needs in order to move with
+direction.
 
-I’m building a personal vitals tracking application with:
-
-* a Spring Boot backend
-* Angular frontend
-* JWT authentication
-* support for blood pressure and pulse tracking
-* plans for medication/activity tracking
-
-I’m also experimenting with a Go-based terminal UI client for interacting with the system.
-
-### A Personal Blog and Portfolio Site
-
-This site, right here. It's built on GitHub Pages using Hugo, and the PaperMod theme. I plan to
-share my current projects and things I've been thinking about lately.
-
-### A Simple Envelopes Budgeting System
-
-My wife and I need something to track our spending and saving. I don't like anything that I've used. So, I'll build something.
+I also run a small consulting practice, [Castanea Systems](https://castaneasystems.com), for teams that
+need help with distributed systems, event-driven architecture, and the backend work around them.
 
 ---
 
-## Topics I’m Thinking About
+## Things I'm Building
 
-Lately I’ve been interested in:
+### Role Model
 
-* how senior engineers can continue to grow technically
-* how I can use AI tools to improve my workflows
-* maintaining curiosity after many years in the industry
+A Go and Python system that analyzes job descriptions and builds resumes from a single, human-written
+source of truth about my career. Every generated bullet traces back to the job it came from. It started
+as a way to stop my resume from drifting away from reality, and it's become my main playground for
+practical LLM work: structured retrieval, provenance, and keeping models honest. A few of the posts here
+came out of it.
+
+### Budgeteer
+
+An envelope-style budgeting app for my household, because nothing I tried fit how we actually think about
+money. FastAPI, PostgreSQL, and background jobs, with some AI-assisted spending insights layered on top.
+
+### This site
+
+Recently redesigned, and about to move to its own domain. Writing here more regularly is part of the plan.
 
 ---
 
-## Career
+## What I'm Learning
 
-I’m currently exploring senior and technical lead engineering opportunities, especially roles involving:
+* Flink, both Flink SQL and the operational side of running it
+* Go, still working to replace my standard of more than 2 decades (Java)
+* Durable workflows and job queues (Temporal and River in particular)
+* Using AI tools well, without handing them the parts that need judgment
 
-* backend systems
-* platform engineering
-* cloud infrastructure
-* distributed systems
-* developer tooling
-* Go, Java, or TypeScript ecosystems
+---
 
-I’m particularly drawn to teams that value:
+## Topics I'm Thinking About
 
-* thoughtful engineering
-* strong communication
-* ownership
-* mentorship
-* continuous learning
+* How senior engineers keep growing technically after decades in the industry
+* Where LLMs genuinely help in engineering work, and where they quietly make things worse
+* What it takes to make a platform team effective rather than just busy
 
 ---
 
 ## Outside of Engineering
 
-Outside of software, I enjoy:
+When I'm not at a keyboard, I enjoy:
 
 * playing bass guitar
 * drawing with graphite and charcoal
 * reading science fiction and fantasy
 * building things from wood with my hands
-* learning continuously
-* organizing systems and workflows
-* exploring better ways to think and work
+* organizing systems and workflows, sometimes a little too much
 
 ---
 
 ## Philosophy
 
-I like building software that is:
-
-* understandable
-* maintainable
-* useful
-* resilient
-* beautiful
-
-I’m less interested in hype and more interested in practical engineering that helps real people solve real problems.
-
----
-
-You can find my projects and writing throughout this site as I continue documenting what I’m learning and building.
-
+I like building software that is understandable, maintainable, useful, resilient, and, when I can manage
+it, beautiful. I'm less interested in hype and more interested in practical engineering that helps real
+people solve real problems.
