@@ -26,6 +26,9 @@ theme = 'PaperMod'
             { name = "projects", url = "/projects/" },
         ]
 
+    [params.footer]
+        text = "written by a human, edited in neovim · [rss](/index.xml)"
+
     [params.assets]
         favicon = "favicon.svg"
         favicon16x16 = "favicon-16x16.png"
