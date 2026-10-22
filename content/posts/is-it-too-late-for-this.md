@@ -2,6 +2,8 @@
 date = '2026-05-28T09:53:13-04:00'
 draft = false
 title = 'Is It Too Late for This?'
+tags = ['career']
+featured = true
 +++
 
 There's something embarrassing that I need to admit. I don't have a portfolio. It's not that I have just a sparse one, nor an outdated one. I mean a proper, intentional, _here's what I can do_ portfolio. I've worked to convince myself that I either didn't need one, or didn't have the right projects to share. Maybe I didn't have time to really devote to the task.  Ultimately, though, the real reason was that starting felt like walking into a room full of people who had been there for years and announcing my presence. Kind of terrifying, really. Maybe you know that feeling, too.

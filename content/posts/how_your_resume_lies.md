@@ -2,6 +2,8 @@
 date = '2026-07-04T20:15:59-04:00'
 draft = false
 title = 'How Your Resume Lies While Telling the Truth'
+tags = ['ai', 'career']
+featured = true
 +++
 
 The most dangerous thing that can happen with your resume when working with an LLM to optimize for job applications isn't an

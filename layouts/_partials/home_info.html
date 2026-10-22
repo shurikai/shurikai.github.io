@@ -1,0 +1,69 @@
+{{- /*
+  Homepage intro, replacing PaperMod's home_info.html.
+  Renders on page 1 of the home list, above the recent-posts feed.
+  Sections:
+    1. Hero          ← params.homeInfoParams (Title, Content)
+    2. Topics        ← params.home.topics  [{ name, url }]
+    3. Start here    ← posts with `featured = true` in front matter
+    4. Building      ← project pages with `status = 'active'` (drafts excluded)
+    5. Recent label  ← heads the feed that list.html renders next
+*/ -}}
+{{- with site.Params.homeInfoParams }}
+<section class="home-hero">
+  <p class="home-kicker">{{ site.Params.home.kicker | default "~/jason" }}</p>
+  <h1>{{ .Title | markdownify }}</h1>
+  <div class="home-lede md-content">
+    {{ .Content | $.Page.RenderString (dict "display" "block") }}
+  </div>
+  <div class="home-hero-footer">
+    {{- partial "social_icons.html" (dict "align" "left") }}
+    {{- with site.GetPage "/now" }}
+    <a class="home-now-link" href="{{ .RelPermalink }}">what I'm up to now →</a>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{- with site.Params.home.topics }}
+<nav class="home-topics" aria-label="Topics">
+  <span class="home-label">writes about</span>
+  <ul>
+    {{- range . }}
+    <li><a href="{{ .url | relURL }}">{{ .name }}</a></li>
+    {{- end }}
+  </ul>
+</nav>
+{{- end }}
+
+{{- $featured := where (where site.RegularPages "Section" "posts") "Params.featured" true }}
+{{- with $featured }}
+<section class="home-section">
+  <h2 class="home-label">start here</h2>
+  <div class="home-featured">
+    {{- range .ByDate.Reverse }}
+    <a class="featured-card" href="{{ .RelPermalink }}">
+      <span class="featured-title">{{ .Title }}</span>
+      <span class="featured-blurb">{{ .Description | default (.Summary | plainify | truncate 140) }}</span>
+      <span class="featured-meta">{{ .Date.Format "Jan 2006" }} · {{ .ReadingTime }} min</span>
+    </a>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{- $building := where (where site.RegularPages "Section" "projects") "Params.status" "active" }}
+{{- with $building }}
+<section class="home-section">
+  <h2 class="home-label">currently building</h2>
+  <ul class="home-building">
+    {{- range . }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{- with .Description }}<span> · {{ . }}</span>{{ end }}
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{- end }}
+
+<h2 class="home-label home-recent">recent writing</h2>

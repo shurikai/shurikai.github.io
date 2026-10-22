@@ -14,7 +14,17 @@ theme = 'PaperMod'
     ShowPostNavLinks = true
     ShowBreadCrumbs = true
     ShowCodeCopyButtons = true
-    homeInfoParams = { Title = "Hi, I'm Jason", Content = "Software engineer, late starter, and someone with a pile of half-finished projects. I write about building, learning, and what I should have learned sooner." }
+    mainSections = ["posts"]
+    homeInfoParams = { Title = "Hi, I'm Jason.", Content = "I've spent 27 years building distributed systems, from defense training simulators to event-driven backends. Here I write about Go, AI tooling, and keeping a career honest, including the things I should have learned sooner." }
+
+    [params.home]
+        kicker = "software architect · distributed systems"
+        topics = [
+            { name = "go", url = "/tags/go/" },
+            { name = "ai tooling", url = "/tags/ai/" },
+            { name = "career", url = "/tags/career/" },
+            { name = "projects", url = "/projects/" },
+        ]
 
     [[params.socialIcons]]
         name = "github"

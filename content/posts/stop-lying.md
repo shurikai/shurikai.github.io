@@ -2,6 +2,7 @@
 date = '2026-06-30T18:47:43-04:00'
 draft = false
 title = 'Stop Lying to Yourself (and Others)'
+tags = ['ai', 'career']
 +++
 
 The lying resumes had to stop. After enough customizations for enough job descriptions, my resume had started to look like a copy of a copy

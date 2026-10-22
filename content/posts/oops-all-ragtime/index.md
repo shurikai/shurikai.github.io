@@ -2,6 +2,8 @@
 date = '2026-09-01T20:45:47-04:00'
 draft = false
 title = 'Oops! All Ragtime!'
+tags = ['ai', 'career']
+featured = true
 +++
 
 I was trying to solve a problem, as you do. My effort to make an LLM-powered job and resume management

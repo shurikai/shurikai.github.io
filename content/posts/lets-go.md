@@ -2,6 +2,7 @@
 date = '2026-06-19T08:23:43-04:00'
 draft = false
 title = 'Lets Go, or A Life-Long Love of Language'
+tags = ['go']
 +++
 
 **"Let's Go!"**

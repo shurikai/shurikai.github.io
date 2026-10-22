@@ -2,6 +2,7 @@
 date = '2026-07-07T16:06:29-04:00'
 draft = false
 title = 'Screen Test'
+tags = ['career']
 +++
 
 When is a screen a test? Every time, if your interviewer is good at their

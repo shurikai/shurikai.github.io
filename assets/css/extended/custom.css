@@ -1,0 +1,289 @@
+/*
+ * Site customizations layered on PaperMod.
+ * PaperMod bundles everything in assets/css/extended/ after its own CSS,
+ * so these rules win without forking the theme.
+ */
+
+/* ---------- Self-hosted fonts (SIL OFL, via Fontsource) ---------- */
+@font-face {
+    font-family: 'Literata';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 200 900;
+    src: url('/fonts/literata-latin-opsz-normal.woff2') format('woff2-variations');
+}
+@font-face {
+    font-family: 'Literata';
+    font-style: italic;
+    font-display: swap;
+    font-weight: 200 900;
+    src: url('/fonts/literata-latin-opsz-italic.woff2') format('woff2-variations');
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url('/fonts/jetbrains-mono-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url('/fonts/jetbrains-mono-latin-600-normal.woff2') format('woff2');
+}
+
+/* ---------- Tokens ---------- */
+:root {
+    --font-body: 'Literata', Georgia, 'Times New Roman', serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+    /* Chestnut accent */
+    --accent: #8a4b2e;
+    --accent-soft: rgba(138, 75, 46, 0.08);
+
+    --theme: #fcfbf9;     /* a touch warmer than pure white */
+    --entry: #ffffff;
+}
+
+:root[data-theme="dark"] {
+    --accent: #e0a07a;
+    --accent-soft: rgba(224, 160, 122, 0.10);
+    --entry: rgb(40, 41, 44);
+}
+
+/* ---------- Typography ---------- */
+body {
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+code, pre, kbd,
+.logo a,
+#menu a,
+.post-meta,
+.entry-footer,
+.breadcrumbs,
+.paginav .title,
+.pagination a,
+.footer,
+.home-label,
+.home-kicker,
+.featured-meta {
+    font-family: var(--font-mono);
+}
+
+.post-meta, .entry-footer, .breadcrumbs, .footer {
+    font-size: 13px;
+    letter-spacing: 0.01em;
+}
+
+#menu a {
+    font-size: 15px;
+}
+
+.post-title, .entry-header h2, .md-content h1, .md-content h2, .md-content h3 {
+    letter-spacing: -0.01em;
+}
+
+/* ---------- Accent usage ---------- */
+.md-content a:not(.anchor),
+.home-lede a,
+.home-now-link,
+.home-building a {
+    color: var(--accent);
+    box-shadow: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.md-content a:not(.anchor):hover,
+.home-now-link:hover,
+.home-building a:hover {
+    text-decoration-thickness: 2px;
+}
+
+#menu a:hover, #menu .active {
+    color: var(--accent);
+}
+
+#menu .active {
+    border-bottom-color: var(--accent);
+}
+
+.logo a::before {
+    content: "~/";
+    color: var(--accent);
+}
+
+::selection {
+    background: var(--accent);
+    color: var(--theme);
+}
+
+.post-entry:hover,
+.post-entry:focus-within {
+    border-color: var(--accent);
+}
+
+/* ---------- Homepage ---------- */
+.home-hero {
+    margin: calc(var(--gap) * 2) 0 calc(var(--gap) * 1.5);
+}
+
+.home-kicker {
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.home-hero h1 {
+    font-size: 40px;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+}
+
+.home-lede {
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--content);
+    max-width: 36em;
+}
+
+.home-lede p { margin-bottom: 0.75em; }
+
+.home-hero-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.home-hero-footer .social-icons { padding: 0; }
+.home-hero-footer .social-icons a:first-of-type { padding-inline-start: 0; }
+
+.home-now-link {
+    font-family: var(--font-mono);
+    font-size: 14px;
+}
+
+.home-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: lowercase;
+    letter-spacing: 0.04em;
+    color: var(--secondary);
+    margin-bottom: 12px;
+}
+
+.home-label::before {
+    content: "// ";
+    color: var(--accent);
+}
+
+.home-topics {
+    margin-bottom: calc(var(--gap) * 1.5);
+}
+
+.home-topics ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.home-topics a {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 14px;
+    padding: 4px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--entry);
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.home-topics a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.home-section {
+    margin-bottom: calc(var(--gap) * 1.5);
+}
+
+.home-featured {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.featured-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--accent);
+    border-radius: var(--radius);
+    transition: transform 0.2s ease, border-color 0.2s;
+}
+
+.featured-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+}
+
+.featured-title {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.3;
+    color: var(--primary);
+}
+
+.featured-blurb {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--secondary);
+    flex: 1;
+}
+
+.featured-meta {
+    font-size: 12px;
+    color: var(--secondary);
+}
+
+.home-building {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.home-building li {
+    padding: 6px 0;
+    color: var(--secondary);
+    font-size: 16px;
+}
+
+.home-building li::before {
+    content: "▸ ";
+    color: var(--accent);
+}
+
+.home-recent {
+    margin-top: calc(var(--gap) * 2);
+}
+
+@media (max-width: 600px) {
+    .home-hero h1 { font-size: 32px; }
+    .home-lede { font-size: 17px; }
+}
