@@ -26,6 +26,12 @@ theme = 'PaperMod'
             { name = "projects", url = "/projects/" },
         ]
 
+    [params.assets]
+        favicon = "favicon.svg"
+        favicon16x16 = "favicon-16x16.png"
+        favicon32x32 = "favicon-32x32.png"
+        apple_touch_icon = "apple-touch-icon.png"
+
     [[params.socialIcons]]
         name = "github"
         url = 'https://github.com/shurikai'
