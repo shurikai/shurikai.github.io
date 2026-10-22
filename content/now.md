@@ -43,7 +43,7 @@ money. FastAPI, PostgreSQL, and background jobs, with some AI-assisted spending 
 
 ### This site
 
-Recently redesigned, and about to move to its own domain. Writing here more regularly is part of the plan.
+Recently redesigned and moved to its own domain. Writing here more regularly is part of the plan.
 
 ---
 
