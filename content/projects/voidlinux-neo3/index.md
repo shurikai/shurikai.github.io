@@ -2,8 +2,9 @@
 date = '2026-05-28T17:57:24-04:00'
 draft = false
 title = 'Void Linux on NanoPI NEO3'
-status = 'active'
+status = 'parked'
 github = ''
+weight = 4
 +++
 
 # NanoPI NEO3 +Void == ??
